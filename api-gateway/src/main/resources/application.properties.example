@@ -1,0 +1,12 @@
+# Service Configuration
+spring.application.name=api-gateway
+server.port=8080
+
+# Gateway Routes
+spring.cloud.gateway.routes[0].id=order-service
+spring.cloud.gateway.routes[0].uri=http://localhost:8081
+spring.cloud.gateway.routes[0].predicates[0]=Path=/api/orders/**
+
+spring.cloud.gateway.routes[1].id=inventory-service
+spring.cloud.gateway.routes[1].uri=http://localhost:8082
+spring.cloud.gateway.routes[1].predicates[0]=Path=/api/inventory/**
