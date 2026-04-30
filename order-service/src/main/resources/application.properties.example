@@ -1,0 +1,18 @@
+# Service Configuration
+spring.application.name=order-service
+server.port=8081
+
+# Database Configuration (PostgreSQL)
+spring.datasource.url=jdbc:postgresql://xxxx:5431/order_db
+spring.datasource.username=xxxx
+spring.datasource.password=xxxx
+spring.jpa.hibernate.ddl-auto=update
+
+# Kafka Configuration
+spring.kafka.bootstrap-servers=xxxx:9092
+spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer=org.springframework.kafka.support.serializer.JsonSerializer
+
+# Resilience4j Configuration
+resilience4j.circuitbreaker.instances.inventoryService.failure-rate-threshold=50
+resilience4j.circuitbreaker.instances.inventoryService.wait-duration-in-open-state=5s
