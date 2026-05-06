@@ -5,7 +5,7 @@
 [![Redis](https://img.shields.io/badge/Redis-Caching-red)](https://redis.io/)
 [![Resilience4j](https://img.shields.io/badge/Resilience4j-Fault%20Tolerance-orange)](https://resilience4j.readme.io/)
 
-A production-grade **E-Commerce Order Processing System** built with a modern Microservices architecture. This project is specifically designed to demonstrate how to handle extreme traffic spikes (e.g., **Flash Sales / Harbolnas**) using event-driven patterns, distributed caching, and resilient system design.
+A **E-Commerce Order Processing System** built with a modern Microservices architecture. This project is specifically designed to demonstrate how to handle extreme traffic spikes (e.g., **Flash Sales / Harbolnas**) using event-driven patterns, distributed caching, and resilient system design.
 
 ---
 
